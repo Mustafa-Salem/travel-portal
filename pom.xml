@@ -6,7 +6,17 @@
 
   <groupId>com.mustafasalem.technikum_wien.softwarekomponentensysteme</groupId>
   <artifactId>travel-portal</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+
+  <modules>
+    <module>user</module>
+    <module>article</module>
+    <module>eureka-server</module>
+    <module>gateway</module>
+      <module>configuration</module>
+      <module>gui</module>
+  </modules>
 
   <name>travel-portal</name>
   <!-- FIXME change it to the project's website -->
@@ -16,36 +26,49 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>16</maven.compiler.source>
     <maven.compiler.target>16</maven.compiler.target>
+    <projectlombok-version>1.18.22</projectlombok-version>
+    <!-- Spring Boot and Spring Cloud versions must be compatible-->
+    <spring.boot-version>2.6.4</spring.boot-version>
+    <spring.cloud-version>2021.0.1</spring.cloud-version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <!-- Project Lombok -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${projectlombok-version}</version>
+      </dependency>
+      <!-- Spring Boot -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.6.4</version>
+        <version>${spring.boot-version}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <!-- Spring Cloud -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring.cloud-version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
+    <!-- Project Lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
     </dependency>
+    <!-- Spring Boot -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.6.4</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 

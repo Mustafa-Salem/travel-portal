@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: article
+          uri: http://localhost
+          predicates:
+            - Path=/article/**
+# todo: change following
+server:
+  port: ${app_port}
+# eureka service registration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
