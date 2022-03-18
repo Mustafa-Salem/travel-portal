@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head lang="de">
+        <meta charset="UTF-8">
+        <title>Reiseportal</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Reiseportal</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLandmark" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Österreichs Wahrzeichen</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownLandmark">
+                            <li><a class="dropdown-item" href="#">Martinsturm - Bregenz - Vorarlberg</a></li>
+                            <li><a class="dropdown-item" href="#">Goldenes Dachl - Innsbruck - Tirol</a></li>
+                            <li><a class="dropdown-item" href="#">Festung Hohensalzburg - Salzburg</a></li>
+                            <li><a class="dropdown-item" href="#">Pöstlingberg - Linz - Oberösterreich</a></li>
+                            <li><a class="dropdown-item" href="#">Rathaus - Sankt Pölten - Niederösterreich</a></li>
+                            <li><a class="dropdown-item" href="#">Stephansdom - Wien</a></li>
+                            <li><a class="dropdown-item" href="#">Haydnkirche - Eisenstadt - Burgenland</a></li>
+                            <li><a class="dropdown-item" href="#">Uhrturm - Graz - Steiermark</a></li>
+                            <li><a class="dropdown-item" href="#">Lindwurmbrunnen - Klagenfurt - Kärnten</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTouristAttractions" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sonstige Sehenswürdigkeiten</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownTouristAttractions">
+                            <li><a class="dropdown-item" href="#">Sehenswürdigkeit #1</a></li>
+                            <li><a class="dropdown-item" href="#">Sehenswürdigkeit #2</a></li>
+                            <li><a class="dropdown-item" href="#">Sehenswürdigkeit #3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-secondary">Registrieren</button>
+                <button type="button" class="btn btn-primary">Einloggen</button>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row mt-5">
+                <h1>Neuste Artikel</h1>
+            </div>
+            <div class="row shadow my-5 px-4 py-5 rounded">
+                <div class="col-3">
+                    <img class="img-fluid rounded" src="https://s3-eu-west-1.amazonaws.com/hc-pages-new/de_9-wahrzeichen-in-osterreich/filepict-1535356649.jpg">
+                </div>
+                <div class="col-9">
+                    <h3>Titel</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <a href="http://localhost/article"><button type="button" class="btn btn-primary">Weiterlesen</button></a>
+                </div>
+            </div>
+            <div class="row shadow my-5 px-4 py-5 rounded">
+                <div class="col-3">
+                    <img class="img-fluid rounded" src="https://s3-eu-west-1.amazonaws.com/hc-pages-new/de_9-wahrzeichen-in-osterreich/filepict-1535356649.jpg">
+                </div>
+                <div class="col-9">
+                    <h3>Titel</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <a href="http://localhost/article"><button type="button" class="btn btn-primary">Weiterlesen</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript (Bundle with Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

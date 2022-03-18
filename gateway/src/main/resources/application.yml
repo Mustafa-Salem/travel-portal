@@ -4,13 +4,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: article
-          uri: http://localhost
+        - id: graphical-user-interface
+          uri: lb://GRAPHICAL-USER-INTERFACE
           predicates:
-            - Path=/article/**
-# todo: change following
+            - Path=/**
 server:
-  port: ${app_port}
+  port: 80 # default HTTP port
 # eureka service registration
 eureka:
   client:

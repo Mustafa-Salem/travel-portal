@@ -1,0 +1,9 @@
+server:
+  port: # todo: add port
+
+spring:
+  application:
+    name: blog-post-service
+  # Spring Cloud Config
+  config:
+    import: configserver:http://localhost:8888

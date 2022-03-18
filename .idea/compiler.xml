@@ -7,20 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gui" />
-        <module name="user" />
+        <module name="blog-post-service" />
         <module name="eureka-server" />
         <module name="configuration" />
-        <module name="article" />
         <module name="gateway" />
+        <module name="graphical-user-interface" />
+        <module name="author" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="article" target="16" />
+      <module name="author" target="16" />
+      <module name="blog-post-service" target="16" />
       <module name="configuration" target="16" />
       <module name="eureka-server" target="16" />
       <module name="gateway" target="16" />
-      <module name="gui" target="16" />
+      <module name="graphical-user-interface" target="16" />
       <module name="travel-portal" target="16" />
       <module name="user" target="16" />
     </bytecodeTargetLevel>

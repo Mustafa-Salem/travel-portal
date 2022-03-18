@@ -1,0 +1,15 @@
+server:
+  port: 0 # random
+
+spring:
+  application:
+    name: graphical-user-interface
+  # Spring Cloud Config
+  config:
+    import: configserver:http://localhost:8888
+  # Thymeleaf
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
