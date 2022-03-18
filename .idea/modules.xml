@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/article/article.iml" filepath="$PROJECT_DIR$/article/article.iml" />
+      <module fileurl="file://$PROJECT_DIR$/author/author.iml" filepath="$PROJECT_DIR$/author/author.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blog-post-service/blog-post-service.iml" filepath="$PROJECT_DIR$/blog-post-service/blog-post-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/configuration/configuration.iml" filepath="$PROJECT_DIR$/configuration/configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gui/gui.iml" filepath="$PROJECT_DIR$/gui/gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graphical-user-interface/graphical-user-interface.iml" filepath="$PROJECT_DIR$/graphical-user-interface/graphical-user-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/travel-portal.iml" filepath="$PROJECT_DIR$/travel-portal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
     </modules>
   </component>
 </project>

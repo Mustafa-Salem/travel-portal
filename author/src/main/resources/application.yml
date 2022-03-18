@@ -1,0 +1,32 @@
+server:
+  port: 0 # choose free port automatically
+
+# database config
+spring:
+  application:
+    name: user
+  # Spring Cloud Config
+  config:
+    import: configserver:http://localhost:8888
+  # Database
+  datasource:
+    username: application
+    url: jdbc:postgresql://localhost:5432/travel-portal
+    password: 'groan-unsnarl-hedgehog-incubus-sate-JAW'
+    jpa:
+      # defer-datasource-initialization: true
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      hibernate:
+        ddl_auto: update
+      show-sql: true
+
+# eureka service registration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true

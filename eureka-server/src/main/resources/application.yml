@@ -3,9 +3,9 @@ spring:
     name: eureka-server
 
 server:
-  port: 8761
+  port: 8761 # 8761 default port
 
 eureka:
   client:
-    fetch-registry: false
-    register-with-eureka: false
+    fetch-registry: false # look up all discoverable services ?
+    register-with-eureka: false # become a discoverable service ?
